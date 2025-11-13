@@ -1,18 +1,18 @@
-# Paradex SDK
+# Raredex SDK
 
 ## Install
 
 ```sh
-npm install --save @paradex/sdk
+npm install --save @raredex/sdk
 ```
 
 ```sh
-yarn add @paradex/sdk
+yarn add @raredex/sdk
 ```
 
 ## Examples
 
-- [React app](https://github.com/tradeparadex/paradex-react-example)
+- [React app](https://github.com/traderaredex/raredex-react-example)
 
 ## Notes on browser usage
 
@@ -24,7 +24,7 @@ Have a feature to request or a bug to report?
 
 Drop us a message on [Discord].
 
-[Discord]: https://discord.gg/paradex
+[Discord]: https://discord.gg/raredex
 
 ## Warning
 
