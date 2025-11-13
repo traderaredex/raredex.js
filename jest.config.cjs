@@ -1,7 +1,7 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   rootDir: './tests',
-
+ 
   resolver: 'jest-ts-webcompat-resolver',
 
   transform: {
