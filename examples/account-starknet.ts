@@ -1,17 +1,17 @@
 import * as Starknet from 'starknet';
 
-import * as Paradex from '../src/index.js';
+import * as Raredex from '../src/index.js';
 
 // Flow summary:
-//  1. Fetch Paradex config
-//  2. Create Paraclear provider
-//  3. Derive Paradex account from Starknet signer
+//  1. Fetch Raredex config
+//  2. Create Rareclear provider
+//  3. Derive Raredex account from Starknet signer
 
-// 1. Fetch Paradex config for the relevant environment
+// 1. Fetch Raredex config for the relevant environment
 const config = await Paradex.Config.fetchConfig('testnet'); // "testnet" | "mainnet"
 
-// 2. Create Paraclear provider
-const paraclearProvider = new Paradex.ParaclearProvider.DefaultProvider(config);
+// 2. Create Rareclear provider
+const rareclearProvider = new Raredex.RareclearProvider.DefaultProvider(config);
 
 // 3. Derive Paradex account from Starknet signer
 
@@ -19,9 +19,9 @@ const paraclearProvider = new Paradex.ParaclearProvider.DefaultProvider(config);
 const snProvider = new Starknet.RpcProvider();
 const snAccount = new Starknet.Account(snProvider, '0x1234', '0x5678');
 
-// 3.2 Initialize Paradex account with config and Starknet account
-const paradexAccount = await Paradex.Account.fromStarknetAccount({
-  provider: paraclearProvider,
+// 3.2 Initialize Raredex account with config and Starknet account
+const raredexAccount = await Raredex.Account.fromStarknetAccount({
+  provider: rareclearProvider,
   config,
   account: snAccount,
 });
