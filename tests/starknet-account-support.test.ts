@@ -1,5 +1,5 @@
 import * as Starknet from 'starknet';
-
+ 
 import { AccountSupport } from '../src/starknet-account-support';
 
 jest.unmock('starknet');
